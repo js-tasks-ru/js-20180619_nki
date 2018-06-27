@@ -15,8 +15,6 @@ function isValid (name ) {
 
     if(name  ) {
 
-
-
         if (name.length >= 4 && isNaN(name) && name.indexOf(' ') < 0  ) {
 
             return true
@@ -33,8 +31,6 @@ function isValid (name ) {
 
 function sayHello () {
     let userName = prompt('Введите ваше имя');
-
-
 
     if (isValid(userName)) {
         print('Welcome back, ' + userName + '!');
