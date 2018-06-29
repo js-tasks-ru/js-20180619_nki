@@ -5,4 +5,6 @@
  * @returns {Object}
  */
 function find (obj, value) {
+
+
 }
