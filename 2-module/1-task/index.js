@@ -4,7 +4,7 @@
  * @returns {Object}
  */
 function clone (obj) {
-  
+
   let newObj = {};
 
   for (let key in obj) {
@@ -30,4 +30,6 @@ function clone (obj) {
 
 return newObj;
 
+
 }
+
