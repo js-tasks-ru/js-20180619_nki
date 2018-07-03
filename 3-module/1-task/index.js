@@ -14,16 +14,16 @@ function showSalary(data, age) {
     data.forEach((item,index,array) => {
         if (item.age <= age) {
             if (employe === undefined) {
-                employe = item.name + ' ' + item.balance+'\n';
+                employe = item.name + ', ' + item.balance+'\n';
             }
             else {
-                employe += item.name + ' ' + item.balance+'\n';
+                employe += item.name + ', ' + item.balance+'\n';
             }
         }
     });
-    
-    return employe;
+
+    return employe.trim();
 }
-console.log(showSalary(data,40));
+
 
 
