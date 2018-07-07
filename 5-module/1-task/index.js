@@ -6,9 +6,10 @@
  */
 function highlight(table) {
 
-   let trs = table.querySelectorAll('tbody tr');
 
-    trs.forEach(function (item, index, array) {
+    let trs = table.querySelectorAll('tbody tr');
+
+    trs.forEach( item => {
 
         let age = item.getElementsByTagName('td')[1];
         let gender = item.getElementsByTagName('td')[2];
@@ -43,7 +44,6 @@ function highlight(table) {
 
             age.parentElement.style.textDecoration = "line-through";
         }
-
     });
 
 }
