@@ -29,12 +29,12 @@ function highlight(table) {
             status.parentElement.setAttribute("hidden", "hidden");
         }
 
-        if (gender.innerHTML == 'm') {
+        if (gender.innerHTML === 'm') {
 
             gender.parentElement.classList.add('male');
         }
 
-        if (gender.innerHTML == 'f') {
+        if (gender.innerHTML === 'f') {
 
             gender.parentElement.classList.add('female');
         }
