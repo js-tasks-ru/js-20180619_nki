@@ -15,35 +15,28 @@ function highlight(table) {
         let status = item.getElementsByTagName('td')[3];
 
         if (status.dataset.available === 'true') {
-
             status.parentElement.classList.add('available');
         }
 
         else if (status.dataset.available === 'false' ) {
-
             status.parentElement.classList.add('unavailable');
         }
 
         else  {
-
             status.parentElement.setAttribute("hidden", "hidden");
         }
 
         if (gender.innerHTML === 'm') {
-
             gender.parentElement.classList.add('male');
         }
 
         if (gender.innerHTML === 'f') {
-
             gender.parentElement.classList.add('female');
         }
 
         if (age.innerHTML  < 18) {
-
             age.parentElement.style.textDecoration = "line-through";
         }
 
     });
-
 }
