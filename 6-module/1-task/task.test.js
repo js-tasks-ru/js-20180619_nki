@@ -48,4 +48,24 @@ describe("6-module-1-task", function() {
         expect(getBeforeTime(new Date(2018, 5, 15, 13, 0, 1))).toEqual('1 сек.');
     });
 
+
+    it("если при смещении один месяц", function() {
+
+        Date.now = function () {
+            // Обратите внимание, для всех тестов
+            // Дата фиксируется на одной точке
+            return new Date(2018, 1, 1, 3).getTime();
+        };
+
+
+        expect(getBeforeTime(new Date(2018, 2, 1, 3))).toEqual('1 мес.');
+
+
+
+
+    });
+
+
+
+
 });
