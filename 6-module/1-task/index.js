@@ -45,19 +45,14 @@ function getBeforeTime(when) {
 
         result.push(`${days} д.`);
     }
-
-
+    
     if (month) {
         result.push(`${month} мес.`);
     }
 
-
-
     if (years) {
         result.push(`${years} г.`);
     }
-
-
 
 
     return result.reverse().join(', ');
