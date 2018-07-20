@@ -9,4 +9,12 @@
  */
 function makeLogging(fn, log) {
 
+    return function() {
+
+        log.push([].slice.call(arguments));
+
+        return fn.apply(this,arguments);
+
+    }
+
 }
