@@ -49,13 +49,7 @@ function SortableTable(items) {
     this.sort = function (column, desc = false) {
 
         let tb = this.el.querySelectorAll('tbody')[0]
-
-        console.log(this.el)
         let rowsArray = Array.from(tb.rows);
-
-
-
-
         let compareNum = function(rowA, rowB) {
 
             if (+rowA.cells[column].innerHTML > +rowB.cells[column].innerHTML) {
