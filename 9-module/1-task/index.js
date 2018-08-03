@@ -7,5 +7,12 @@
  */
 function extendClass(Main, Parent) {
     // здесь ваш код наследования
+   // Main.__proto__ = Parent
+    Main.prototype.__proto__  = Parent.prototype
+
+
+
 }
+
+
 
